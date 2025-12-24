@@ -81,7 +81,7 @@
     margin-bottom: 30px;
   }
 }.u-section-4 .u-sheet-1 {
-  min-height: 400px;
+  min-height: 1407px;
 }
 
 .u-section-4 .u-text-1 {
@@ -90,7 +90,7 @@
 }
 
 .u-section-4 .u-text-2 {
-  margin: 20px auto 60px;
+  margin: 17px 0 0;
 }
 
 @media (max-width: 575px) {
@@ -103,126 +103,84 @@
     width: 269px;
     margin-top: 0;
   }
-
-  .u-section-4 .u-text-2 {
-    margin-bottom: 0;
-  }
 }.u-section-5 .u-sheet-1 {
-  min-height: 1112px;
+  min-height: 247px;
 }
 
 .u-section-5 .u-layout-wrap-1 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 49px;
+  margin-bottom: 60px;
 }
 
-.u-section-5 .u-image-1 {
-  min-height: 595px;
-  background-image: url("images/roof-washing-tile-gold-coast.JPG");
-  background-position: 94.22% 0%;
-  background-size: auto 125%;
+.u-section-5 .u-layout-cell-1 {
+  min-height: 127px;
+  background-image: none;
 }
 
 .u-section-5 .u-container-layout-1 {
-  padding: 19px 14px;
+  padding: 30px 11px;
 }
 
 .u-section-5 .u-text-1 {
-  font-weight: 700;
-  font-size: 1.875rem;
-  margin: 488px auto 0;
+  margin: 0 0 0 19px;
 }
 
-.u-section-5 .u-image-2 {
-  min-height: 595px;
-  background-image: url("images/IMG_8710.JPG");
-  background-position: 50% 50%;
-  background-size: cover;
+.u-section-5 .u-layout-cell-2 {
+  min-height: 127px;
+  background-image: none;
 }
 
 .u-section-5 .u-container-layout-2 {
-  padding: 24px 30px;
+  padding: 30px;
 }
 
-.u-section-5 .u-text-2 {
-  font-weight: 700;
-  font-size: 1.875rem;
+.u-section-5 .u-btn-1 {
+  background-image: none;
   margin: 0 auto;
-}
-
-.u-section-5 .u-image-3 {
-  min-height: 537px;
-  background-image: url("images/roof-washing-gold-coast.JPG");
-  background-position: 50% 50%;
-  background-size: cover;
-}
-
-.u-section-5 .u-container-layout-3 {
-  padding: 30px;
-}
-
-.u-section-5 .u-image-4 {
-  min-height: 537px;
-  background-image: url("images/metal-roof-washing-gold-coast.png");
-  background-position: 47.9% 50%;
-  background-size: cover;
-}
-
-.u-section-5 .u-container-layout-4 {
-  padding: 30px;
+  padding: 12px 30px;
 }
 
 @media (max-width: 1199px) {
   .u-section-5 .u-sheet-1 {
-    min-height: 914px;
+    min-height: 264px;
   }
 
-  .u-section-5 .u-image-1 {
-    min-height: 491px;
+  .u-section-5 .u-layout-cell-1 {
+    min-height: 146px;
   }
 
-  .u-section-5 .u-image-2 {
-    min-height: 491px;
+  .u-section-5 .u-text-1 {
+    width: auto;
+    margin-right: 58px;
+    margin-left: 0;
   }
 
-  .u-section-5 .u-image-3 {
-    min-height: 443px;
-  }
-
-  .u-section-5 .u-image-4 {
-    min-height: 443px;
+  .u-section-5 .u-layout-cell-2 {
+    min-height: 105px;
   }
 }
 
 @media (max-width: 991px) {
   .u-section-5 .u-sheet-1 {
-    min-height: 695px;
+    min-height: 276px;
   }
 
-  .u-section-5 .u-image-1 {
-    min-height: 376px;
+  .u-section-5 .u-text-1 {
+    margin-right: 0;
   }
 
-  .u-section-5 .u-image-2 {
-    min-height: 376px;
-  }
-
-  .u-section-5 .u-image-3 {
-    min-height: 339px;
-  }
-
-  .u-section-5 .u-image-4 {
-    min-height: 339px;
+  .u-section-5 .u-layout-cell-2 {
+    min-height: 146px;
   }
 }
 
 @media (max-width: 767px) {
   .u-section-5 .u-sheet-1 {
-    min-height: 2126px;
+    min-height: 359px;
   }
 
-  .u-section-5 .u-image-1 {
-    min-height: 564px;
+  .u-section-5 .u-layout-cell-1 {
+    min-height: 100px;
   }
 
   .u-section-5 .u-container-layout-1 {
@@ -230,29 +188,11 @@
     padding-right: 10px;
   }
 
-  .u-section-5 .u-image-2 {
-    min-height: 564px;
+  .u-section-5 .u-layout-cell-2 {
+    min-height: 100px;
   }
 
   .u-section-5 .u-container-layout-2 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-5 .u-image-3 {
-    min-height: 509px;
-  }
-
-  .u-section-5 .u-container-layout-3 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-5 .u-image-4 {
-    min-height: 509px;
-  }
-
-  .u-section-5 .u-container-layout-4 {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -260,126 +200,124 @@
 
 @media (max-width: 575px) {
   .u-section-5 .u-sheet-1 {
-    min-height: 1330px;
-  }
-
-  .u-section-5 .u-image-1 {
-    min-height: 374px;
-  }
-
-  .u-section-5 .u-text-1 {
-    width: 90px;
-    margin-top: 279px;
-  }
-
-  .u-section-5 .u-image-2 {
-    min-height: 355px;
-  }
-
-  .u-section-5 .u-image-3 {
-    min-height: 320px;
-  }
-
-  .u-section-5 .u-image-4 {
-    min-height: 320px;
+    min-height: 356px;
   }
 }.u-section-6 .u-sheet-1 {
-  min-height: 453px;
+  min-height: 1112px;
 }
 
 .u-section-6 .u-layout-wrap-1 {
-  margin-top: 60px;
-  margin-bottom: -7px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.u-section-6 .u-layout-cell-1 {
-  min-height: 333px;
+.u-section-6 .u-image-1 {
+  min-height: 595px;
+  background-image: url("images/roof-washing-tile-gold-coast.JPG");
+  background-position: 94.22% 0%;
+  background-size: auto 125%;
 }
 
 .u-section-6 .u-container-layout-1 {
-  padding: 30px;
+  padding: 19px 14px;
 }
 
 .u-section-6 .u-text-1 {
-  margin-bottom: 0;
-  margin-top: 0;
-  --animation-custom_in-translate_x: -200px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
+  font-weight: 700;
+  font-size: 1.875rem;
+  margin: 488px auto 0;
 }
 
-.u-section-6 .u-text-2 {
-  margin: 20px 60px 0 0;
-}
-
-.u-section-6 .u-btn-1 {
-  background-image: none;
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 0.3;
-  --color-var: #56bae7;
-  margin: 30px 60px 0 0;
-  padding: 12px 30px 12px 29px;
-}
-
-.u-section-6 .u-layout-cell-2 {
-  min-height: 333px;
+.u-section-6 .u-image-2 {
+  min-height: 595px;
+  background-image: url("images/IMG_8710.JPG");
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .u-section-6 .u-container-layout-2 {
+  padding: 24px 30px;
+}
+
+.u-section-6 .u-text-2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  margin: 0 auto;
+}
+
+.u-section-6 .u-image-3 {
+  min-height: 537px;
+  background-image: url("images/IMG_0919.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.u-section-6 .u-container-layout-3 {
   padding: 30px;
 }
 
-.u-section-6 .u-text-3 {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size: 1.5rem;
-  padding-left: 8px;
+.u-section-6 .u-image-4 {
+  min-height: 537px;
+  background-image: url("images/Tiles_roof_washing_Gold_Coast.JPG");
+  background-position: 50% 50%;
+  background-size: 115%;
+}
+
+.u-section-6 .u-container-layout-4 {
+  padding: 30px;
 }
 
 @media (max-width: 1199px) {
   .u-section-6 .u-sheet-1 {
-    min-height: 395px;
+    min-height: 914px;
   }
 
-  .u-section-6 .u-layout-cell-1 {
-    min-height: 275px;
+  .u-section-6 .u-image-1 {
+    min-height: 491px;
   }
 
-  .u-section-6 .u-text-2 {
-    margin-right: 0;
+  .u-section-6 .u-image-2 {
+    min-height: 491px;
   }
 
-  .u-section-6 .u-btn-1 {
-    margin-right: 0;
+  .u-section-6 .u-image-3 {
+    min-height: 443px;
   }
 
-  .u-section-6 .u-layout-cell-2 {
-    min-height: 275px;
+  .u-section-6 .u-image-4 {
+    min-height: 443px;
   }
 }
 
 @media (max-width: 991px) {
   .u-section-6 .u-sheet-1 {
-    min-height: 220px;
+    min-height: 695px;
   }
 
-  .u-section-6 .u-layout-cell-1 {
-    min-height: 100px;
+  .u-section-6 .u-image-1 {
+    min-height: 376px;
   }
 
-  .u-section-6 .u-layout-cell-2 {
-    min-height: 100px;
+  .u-section-6 .u-image-2 {
+    min-height: 376px;
+  }
+
+  .u-section-6 .u-image-3 {
+    min-height: 339px;
+  }
+
+  .u-section-6 .u-image-4 {
+    min-height: 339px;
   }
 }
 
 @media (max-width: 767px) {
   .u-section-6 .u-sheet-1 {
-    min-height: 320px;
+    min-height: 2126px;
+  }
+
+  .u-section-6 .u-image-1 {
+    min-height: 564px;
   }
 
   .u-section-6 .u-container-layout-1 {
@@ -387,34 +325,172 @@
     padding-right: 10px;
   }
 
+  .u-section-6 .u-image-2 {
+    min-height: 564px;
+  }
+
   .u-section-6 .u-container-layout-2 {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .u-section-6 .u-text-3 {
-    font-size: 1rem;
+  .u-section-6 .u-image-3 {
+    min-height: 509px;
+  }
+
+  .u-section-6 .u-container-layout-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-6 .u-image-4 {
+    min-height: 509px;
+  }
+
+  .u-section-6 .u-container-layout-4 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
 @media (max-width: 575px) {
   .u-section-6 .u-sheet-1 {
+    min-height: 1330px;
+  }
+
+  .u-section-6 .u-image-1 {
+    min-height: 374px;
+  }
+
+  .u-section-6 .u-text-1 {
+    width: 90px;
+    margin-top: 279px;
+  }
+
+  .u-section-6 .u-image-2 {
+    min-height: 355px;
+  }
+
+  .u-section-6 .u-image-3 {
+    min-height: 320px;
+  }
+
+  .u-section-6 .u-image-4 {
+    min-height: 320px;
+  }
+}.u-section-7 .u-sheet-1 {
+  min-height: 399px;
+}
+
+.u-section-7 .u-layout-wrap-1 {
+  margin-top: 69px;
+  margin-bottom: 28px;
+}
+
+.u-section-7 .u-layout-cell-1 {
+  min-height: 302px;
+}
+
+.u-section-7 .u-container-layout-1 {
+  padding: 30px 30px 1px;
+}
+
+.u-section-7 .u-text-1 {
+  --animation-custom_in-translate_x: -200px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  margin: 0;
+}
+
+.u-section-7 .u-text-2 {
+  margin: 20px 60px 0 0;
+}
+
+.u-section-7 .u-layout-cell-2 {
+  min-height: 302px;
+}
+
+.u-section-7 .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-section-7 .u-text-3 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1.5rem;
+  padding-left: 8px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-7 .u-sheet-1 {
+    min-height: 395px;
+  }
+
+  .u-section-7 .u-layout-cell-1 {
+    min-height: 249px;
+  }
+
+  .u-section-7 .u-text-2 {
+    margin-right: 0;
+  }
+
+  .u-section-7 .u-layout-cell-2 {
+    min-height: 249px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-7 .u-sheet-1 {
+    min-height: 220px;
+  }
+
+  .u-section-7 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-section-7 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-7 .u-sheet-1 {
+    min-height: 320px;
+  }
+
+  .u-section-7 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-7 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-7 .u-text-3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-7 .u-sheet-1 {
     min-height: 646px;
   }
 
-  .u-section-6 .u-layout-wrap-1 {
+  .u-section-7 .u-layout-wrap-1 {
     margin-top: -81px;
     margin-bottom: 60px;
   }
 
-  .u-section-6 .u-layout-cell-1 {
+  .u-section-7 .u-layout-cell-1 {
     min-height: 433px;
   }
 
-  .u-section-6 .u-text-1 {
+  .u-section-7 .u-text-1 {
     width: auto;
     margin-top: 83px;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
