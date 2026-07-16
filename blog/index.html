@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: /blog/
+title: Blog | GC Shine Pressure Washing Gold Coast
+description: "Tips and guides on pressure washing, roof cleaning and home exterior care on the Gold Coast, from GC Shine."
+---
+<section class="page-hero">
+  <div class="hero-media" style="background-image:url('{{ "/images/roof-cleaning-tiles-gold-coast.JPG" | relative_url }}');"></div>
+  <div class="hero-inner">
+    <span class="eyebrow">Blog</span>
+    <h1>Tips for keeping your Gold Coast property looking its best.</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% if site.posts.size == 0 %}
+      <p>New posts are on the way &mdash; check back soon.</p>
+    {% else %}
+      <div class="post-list">
+        {% for post in site.posts %}
+          <article class="post-card">
+            <p class="meta">{{ post.date | date: "%-d %B %Y" }}</p>
+            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+            {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 32 }}</p>{% endif %}
+            <a class="link-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>

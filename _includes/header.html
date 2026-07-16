@@ -1,0 +1,30 @@
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/images/1-21.png' | relative_url }}" alt="{{ site.business_name }} logo">
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links">
+      {%- for item in site.nav -%}
+        {%- assign is_active = false -%}
+        {%- if item.url == page.url -%}
+          {%- assign is_active = true -%}
+        {%- elsif item.url != "/" and page.url contains item.url -%}
+          {%- assign is_active = true -%}
+        {%- endif -%}
+        <li>
+          <a href="{{ item.url | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
+
+    <div class="header-cta">
+      <a class="header-phone" href="tel:{{ site.phone_link }}">{{ site.phone_display }}</a>
+      <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get a Quote</a>
+    </div>
+  </div>
+</header>

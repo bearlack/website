@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="section">
+  <div class="container post-body">
+    <a class="back-link" href="{{ '/blog/' | relative_url }}">&larr; Back to the blog</a>
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%-d %B %Y" }}{% if page.author %} &middot; {{ page.author }}{% endif %}</p>
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,60 @@
+title: GC Shine Pressure Washing
+business_name: "GC Shine Pressure Washing"
+description: >-
+  Professional pressure washing, roof washing and house washing
+  on the Gold Coast, Queensland. Fully insured, locally owned and operated.
+url: "https://gcshine.com.au"
+baseurl: ""
+lang: en_AU
+timezone: Australia/Brisbane
+logo: /images/1-21.png
+
+phone_display: "0429 371 539"
+phone_link: "0429371539"
+email: "bear@gcshine.com.au"
+facebook_url: "https://www.facebook.com/profile.php?id=61580452630302"
+google_reviews_url: "https://share.google/DxUZRjYUS1RgrGzHi"
+
+# ABN, shown in the footer and site structured data
+abn: "18 819 928 297"
+
+nav:
+  - title: Home
+    url: /
+  - title: Roof Washing
+    url: /Roof-Washing-Gold-Coast.html
+  - title: House Washing
+    url: /House-Washing-Gold-Coast.html
+  - title: Window Cleaning
+    url: /Window-Cleaning-Gold-Coast.html
+  - title: Pressure Washing
+    url: /Pressure-Washing-Gold-Coast.html
+  - title: Commercial
+    url: /Commercial-and-Body-Corporate.html
+  - title: Pricing
+    url: /pricing/
+  - title: Blog
+    url: /blog/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules

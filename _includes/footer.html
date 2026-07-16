@@ -1,0 +1,40 @@
+<footer class="site-footer">
+  <div class="container">
+    <a class="footer-brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/images/1-21.png' | relative_url }}" alt="{{ site.business_name }} logo">
+    </a>
+    <div class="footer-grid">
+      <div>
+        <h4>Service area</h4>
+        <p>Based in Southport, proudly serving the whole Gold Coast.</p>
+        {% if site.abn %}<p>ABN: {{ site.abn }}</p>{% endif %}
+        <img class="badge-insured" src="{{ '/images/fullyinsured.png' | relative_url }}" alt="Fully insured">
+        <a class="google-rating" href="{{ site.google_reviews_url }}" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          Google Reviews (25)
+        </a>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="{{ '/portfolio/' | relative_url }}">Our work</a>
+        <a href="{{ '/pricing/' | relative_url }}">Pricing</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Get in touch</h4>
+        <a href="{{ '/quote/' | relative_url }}">Request a free quote</a>
+        <a href="tel:{{ site.phone_link }}">{{ site.phone_display }}</a>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a href="{{ site.facebook_url }}">{{ site.business_name }} on Facebook</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; {{ 'now' | date: "%Y" }} {{ site.business_name }}. Proudly serving the Gold Coast.</span>
+      <span><a href="{{ '/privacy/' | relative_url }}" style="color:inherit;">Privacy Policy</a></span>
+    </div>
+  </div>
+</footer>
+<script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
