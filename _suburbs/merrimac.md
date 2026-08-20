@@ -1,0 +1,47 @@
+---
+suburb: "Merrimac"
+title: "Pressure Cleaning & Roof Washing Merrimac"
+description: "Roof washing, house washing and pressure cleaning in Merrimac. Duplexes, family homes and tile roofs, cleaned without high-pressure damage. Free quotes."
+heading: "Roof and exterior cleaning in Merrimac."
+lede: "Set back from the coast, so it's shade and humidity rather than salt that dictates when things need doing here."
+hero: /images/driveway-pressure-cleaning-gold-coast-hero.webp
+travel: "around 20 minutes from Southport"
+nearby:
+  - "Robina"
+  - "Ashmore"
+  - "Benowa"
+  - "Clear Island Waters"
+  - "Mudgeeraba"
+breadcrumb: "Merrimac"
+service_name: "Pressure Cleaning Merrimac"
+local_factors:
+  - heading: "Inland, so growth rather than salt is the driver"
+    body: "Far enough from the coast that salt isn't the main issue. What replaces it is humidity sitting in a suburb with plenty of tree cover and waterways, which keeps surfaces damp for longer after rain than an open coastal block would be."
+  - heading: "Tile roofs that respond well to soft washing"
+    body: "A lot of Merrimac roofing is concrete or terracotta tile. Those hold staining that lifts dramatically once treated, and they're also exactly the roofs where high pressure causes real damage — cracked tiles and blown-out pointing. Low pressure and the right chemistry is the only sensible approach."
+  - heading: "Duplexes and shared roofs"
+    body: "Duplex and townhouse roofs are common here. Doing both halves in one visit is considerably cheaper than two separate jobs, and it means the whole building matches rather than one side looking freshly done next to one that doesn't."
+schedule:
+  - service: "Roof washing"
+    url: "/Roof-Washing-Gold-Coast.html"
+    interval: "Every 3 years"
+    why: "No coastal salt, but shade and humidity still bring growth on faster than an open block."
+  - service: "House washing"
+    url: "/House-Washing-Gold-Coast.html"
+    interval: "Every 12–18 months"
+    why: "Shaded walls, especially on the southern side, are where mould shows first."
+  - service: "Window cleaning"
+    url: "/Window-Cleaning-Gold-Coast.html"
+    interval: "Every 6 months"
+    why: "Dust and pollen rather than salt spray, so a longer interval works."
+  - service: "Pressure cleaning"
+    url: "/Pressure-Washing-Gold-Coast.html"
+    interval: "Every 12 months"
+    why: "Shaded driveways and paths hold moisture and stain."
+faqs:
+  - q: "We're a duplex — can you do both sides at once?"
+    a: "Yes, and we'd recommend it. It's cheaper per side than two separate visits, and the whole roof ends up matching. Worth having a quick word with your neighbour before you call."
+  - q: "Will washing crack my roof tiles?"
+    a: "Not the way we do it. Cracked tiles come from high pressure, which is why we never point a pressure gun at a roof. Soft washing uses low pressure and lets the treatment lift the growth instead."
+---
+<p>Merrimac sits inland from the beaches, which changes the job. Salt largely drops out of the picture and organic growth takes over — driven by shade, humidity and the waterways running through the area. It's a suburb of family homes and duplexes, and duplex roofs in particular are worth doing as one job rather than two, since we're already set up.</p>

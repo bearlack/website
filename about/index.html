@@ -1,0 +1,73 @@
+---
+layout: default
+permalink: /about/
+title: About GC Shine | Southport Pressure Washing | GC Shine
+description: "GC Shine is a Southport-based, owner-operated exterior cleaning business servicing the whole Gold Coast. Fully insured, 200+ properties cleaned."
+breadcrumb: "About"
+image: /images/pressure-cleaning-gold-coast.webp
+preload_image: /images/pressure-cleaning-gold-coast.webp
+---
+<section class="page-hero">
+  <div class="hero-media" style="background-image:url('{{ "/images/pressure-cleaning-gold-coast.webp" | relative_url }}');"></div>
+  <div class="hero-inner">
+    <span class="eyebrow">About us</span>
+    <h1>Local, insured, and on the tools ourselves.</h1>
+    <p class="lede">GC Shine is a Southport-based exterior cleaning business servicing the whole Gold Coast &mdash; owner-operated, fully insured, and 200+ properties in.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get a free quote</a>
+      <a class="btn btn-outline" href="tel:{{ site.phone_link }}">Call or text {{ site.phone_display }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container prose">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a> &rsaquo; <span>About</span>
+    </nav>
+
+    <h2>How GC Shine started</h2>
+    <p>GC Shine started with a simple idea: work outdoors, do honest work, and make a real difference to how a home or business feels. What began as a small weekend side job grew into something bigger &mdash; built not through shortcuts or heavy marketing, but through word of mouth, trust, and results people were happy to recommend.</p>
+    <p>From day one the goal has been the same: show up when we say we will, do the job properly, and treat every property like it's our own. No rushing, no cut corners &mdash; just reliable work with pride behind it.</p>
+    <p>Today we've cleaned over 200 Gold Coast properties, from single units and family homes through to supermarket carparks and body corporate complexes. Every job still gets the same attention.</p>
+
+    <h2>Who you're actually dealing with</h2>
+    <p>When you call GC Shine, you get Bear &mdash; the owner. Not a call centre, not a subcontractor who's never spoken to you. The person who quotes your job is the person who turns up to do it, which means nothing gets lost between the sale and the work.</p>
+    <p class="signature">&ndash; Bear Lack<span>Owner &amp; Operator, GC Shine Pressure Washing</span></p>
+
+    <h2>Why we soft wash instead of blasting everything</h2>
+    <p>Plenty of operators will point a high-pressure gun at anything. It's faster, and on the day it can look impressive. The problem is what it does underneath &mdash; cracked tiles, stripped coatings, water forced up under roof sheeting, render damaged, paint lifted.</p>
+    <p>Soft washing takes longer and needs proper chemistry, but it kills mould, moss, lichen and algae at the root rather than knocking it off the surface. The result stays clean far longer, and your roof and paintwork last as long as they're supposed to. High pressure has its place &mdash; on concrete, where it belongs.</p>
+
+    <h2>Where we work</h2>
+    <p>We're based in Southport and service the whole Gold Coast, from the northern suburbs down to the Tweed border and inland through the valleys. There's no travel surcharge inside that area.</p>
+    <p>We've written up what to expect in a few of the areas we work in most &mdash; have a look at our <a href="{{ '/service-areas/' | relative_url }}">service areas</a>.</p>
+
+    <h2>Insurance, ABN and the guarantee</h2>
+    <ul class="checklist">
+      <li><strong>Fully insured</strong>, including public liability for commercial and body corporate work. Certificate of currency available on request.</li>
+      <li><strong>ABN {{ site.abn }}</strong> &mdash; a registered Australian business, not a cash-only operation.</li>
+      <li><strong>If you're not happy, you don't pay.</strong> That's the whole guarantee. We've never had to use it and we don't plan to start.</li>
+    </ul>
+
+    <h2>Opening hours</h2>
+    <ul class="checklist">
+      {%- for line in site.hours_display %}
+      <li>{{ line }}</li>
+      {%- endfor %}
+      <li>After-hours, overnight and weekend scheduling available for commercial sites</li>
+    </ul>
+
+    <h2>Get in touch</h2>
+    <p>
+      Phone or text: <a href="tel:{{ site.phone_link }}">{{ site.phone_display }}</a><br>
+      Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+      Based in {{ site.locality }} {{ site.postcode }}, servicing the whole Gold Coast
+    </p>
+    <p><a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Request a free quote</a></p>
+  </div>
+</section>
+
+{% include reviews.html %}
+{% include trust-bar.html %}
+{% include cta-banner.html %}

@@ -1,0 +1,33 @@
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.business_name }} — home">
+      <img src="{{ '/images/gc-shine-logo.webp' | relative_url }}" alt="{{ site.business_name }}" width="500" height="260">
+    </a>
+
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="site-nav">
+      {%- for item in site.nav -%}
+        {%- assign is_active = false -%}
+        {%- if item.url == page.url -%}
+          {%- assign is_active = true -%}
+        {%- elsif item.url == "/blog/" and page.layout == "post" -%}
+          {%- assign is_active = true -%}
+        {%- elsif item.url != "/" and page.url contains item.url -%}
+          {%- assign is_active = true -%}
+        {%- endif -%}
+        <li>
+          <a href="{{ item.url | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
+
+    <div class="header-cta">
+      <a class="header-phone" href="tel:{{ site.phone_link }}">{{ site.phone_display }}</a>
+      <a class="btn btn-primary btn-sm" href="{{ '/quote/' | relative_url }}">Get a Quote</a>
+    </div>
+  </div>
+</header>

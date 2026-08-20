@@ -1,0 +1,70 @@
+<footer class="site-footer">
+  <div class="container">
+    <a class="footer-brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/images/gc-shine-logo.webp' | relative_url }}" alt="{{ site.business_name }}" width="500" height="260">
+    </a>
+    <div class="footer-grid">
+
+      <div class="footer-nap">
+        <h2>GC Shine Pressure Washing</h2>
+        <p class="footer-nap__line">Based in {{ site.locality }} {{ site.postcode }}, {{ site.region }}<br>
+        Servicing the whole Gold Coast</p>
+        <p class="footer-nap__line">
+          <a href="tel:{{ site.phone_link }}">{{ site.phone_display }}</a><br>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </p>
+        {% if site.abn %}<p class="footer-nap__line">ABN {{ site.abn }}</p>{% endif %}
+      </div>
+
+      <div>
+        <h2>Opening hours</h2>
+        {%- for line in site.hours_display %}
+        <p class="footer-nap__line">{{ line }}</p>
+        {%- endfor %}
+        <p class="footer-nap__line">After-hours and weekend work available for commercial sites.</p>
+        <img class="badge-insured" src="{{ '/images/fully-insured-badge.webp' | relative_url }}" alt="Fully insured" width="240" height="240" loading="lazy">
+      </div>
+
+      <div>
+        <h2>Services</h2>
+        <a href="{{ '/Roof-Washing-Gold-Coast.html' | relative_url }}">Roof washing</a>
+        <a href="{{ '/House-Washing-Gold-Coast.html' | relative_url }}">House washing</a>
+        <a href="{{ '/Window-Cleaning-Gold-Coast.html' | relative_url }}">Window cleaning</a>
+        <a href="{{ '/Pressure-Washing-Gold-Coast.html' | relative_url }}">Pressure cleaning</a>
+        <a href="{{ '/Commercial-and-Body-Corporate.html' | relative_url }}">Commercial &amp; body corporate</a>
+      </div>
+
+      <div class="footer-contact">
+        <h2>Explore</h2>
+        <a href="{{ '/quote/' | relative_url }}">Request a free quote</a>
+        <a href="{{ '/pricing/' | relative_url }}">Pricing &amp; bundles</a>
+        <a href="{{ '/portfolio/' | relative_url }}">Our work</a>
+        <a href="{{ '/about/' | relative_url }}">About us</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a href="{{ site.facebook_url }}" target="_blank" rel="noopener">Facebook</a>
+        <a class="google-rating" href="{{ site.google_reviews_url }}" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          Our Google reviews
+        </a>
+      </div>
+    </div>
+
+    {%- assign subs = site.suburbs | sort: "title" -%}
+    {%- if subs.size > 0 %}
+    <div class="footer-areas">
+      <h2>Areas we service</h2>
+      <p>
+        {%- for s in subs -%}
+        <a href="{{ s.url | relative_url }}">{{ s.suburb }}</a>{% unless forloop.last %} &middot; {% endunless %}
+        {%- endfor -%}
+      </p>
+    </div>
+    {%- endif %}
+
+    <div class="footer-bottom">
+      <span>&copy; {{ 'now' | date: "%Y" }} {{ site.business_name }}. Proudly serving the Gold Coast.</span>
+      <span><a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a></span>
+    </div>
+  </div>
+</footer>
+<script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>

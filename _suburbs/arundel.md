@@ -1,0 +1,47 @@
+---
+suburb: "Arundel"
+title: "Pressure Cleaning & Roof Washing Arundel"
+description: "Roof washing, house washing, solar panel and pressure cleaning in Arundel. Family homes on good blocks, ten minutes from our Southport base. Free quotes."
+heading: "Roof and exterior cleaning in Arundel."
+lede: "Established family homes on decent blocks, ten minutes from us, and a lot of solar up on the roofs."
+hero: /images/solar-panel-cleaning-gold-coast.webp
+travel: "only about ten minutes from our Southport base"
+nearby:
+  - "Ashmore"
+  - "Labrador"
+  - "Biggera Waters"
+  - "Southport"
+  - "Hope Island"
+breadcrumb: "Arundel"
+service_name: "Pressure Cleaning Arundel"
+local_factors:
+  - heading: "A lot of rooftop solar"
+    body: "Solar is common on Arundel roofs, and dirty panels quietly cost you output. Because we clean panels free with every roof wash, getting the roof done here usually means getting the panels sorted at the same time for nothing extra."
+  - heading: "Set back from the coast"
+    body: "Far enough inland that salt stops being the issue. Humidity, shade and leaf drop take over as what dictates when a roof or wall needs doing, which generally means a slightly longer cycle than a beachside suburb."
+  - heading: "Family homes with plenty of hard surface"
+    body: "Driveways, paths around the house and patios add up on a typical Arundel block. Doing them together with a house or roof wash is cheaper than booking each separately, because we're only setting up once."
+schedule:
+  - service: "Roof washing"
+    url: "/Roof-Washing-Gold-Coast.html"
+    interval: "Every 3 years"
+    why: "No coastal salt, but shade and leaf drop still bring growth on."
+  - service: "Solar panel cleaning"
+    url: "/Roof-Washing-Gold-Coast.html"
+    interval: "With every roof wash"
+    why: "Included free — dirty panels cost output and the roof is due anyway."
+  - service: "House washing"
+    url: "/House-Washing-Gold-Coast.html"
+    interval: "Every 12–18 months"
+    why: "Shaded walls, especially southern-facing, are where mould appears first."
+  - service: "Pressure cleaning"
+    url: "/Pressure-Washing-Gold-Coast.html"
+    interval: "Every 12 months"
+    why: "Shaded driveways and paths hold moisture and stain."
+faqs:
+  - q: "Are my solar panels included in a roof wash?"
+    a: "Yes, free, every time. If your roof is due anyway, the panels come as part of it rather than as an extra line on the quote."
+  - q: "How close are you to Arundel?"
+    a: "About ten minutes from our base in Southport, so it's one of the easier suburbs for us to fit in."
+---
+<p>Arundel is close to home for us and straightforward to work in — family homes on reasonable blocks, mostly tile roofing, and a noticeable amount of rooftop solar. Being set back from the water means salt isn't the main driver here; it's shade, humidity and whatever the trees are dropping.</p>

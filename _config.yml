@@ -1,0 +1,92 @@
+title: GC Shine Pressure Washing
+business_name: "GC Shine Pressure Washing"
+description: >-
+  Roof washing, house washing and pressure cleaning on the Gold Coast.
+  Fully insured, locally owned and operated. Free quotes.
+url: "https://www.gcshine.com.au"
+baseurl: ""
+lang: en_AU
+timezone: Australia/Brisbane
+logo: /images/gc-shine-logo.webp
+
+phone_display: "0429 371 539"
+phone_link: "0429371539"
+email: "bear@gcshine.com.au"
+facebook_url: "https://www.facebook.com/profile.php?id=61580452630302"
+google_reviews_url: "https://share.google/DxUZRjYUS1RgrGzHi"
+
+# ABN, shown in the footer and site structured data
+abn: "18 819 928 297"
+
+# Service-area business: suburb + region only, street address deliberately not published
+locality: "Southport"
+region: "QLD"
+postcode: "4215"
+country: "AU"
+latitude: -27.9672
+longitude: 153.4000
+service_radius_km: 40
+price_range: "$$"
+
+hours:
+  - days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    opens: "08:00"
+    closes: "18:00"
+  - days: ["Saturday", "Sunday"]
+    opens: "08:00"
+    closes: "16:00"
+hours_display:
+  - "Mon to Fri: 8am – 6pm"
+  - "Sat & Sun: 8am – 4pm"
+
+# Logo links home, so Home is deliberately not repeated here — 8 items is
+# the most the desktop bar fits without wrapping.
+nav:
+  - title: Roof Washing
+    url: /Roof-Washing-Gold-Coast.html
+  - title: House Washing
+    url: /House-Washing-Gold-Coast.html
+  - title: Window Cleaning
+    url: /Window-Cleaning-Gold-Coast.html
+  - title: Pressure Cleaning
+    url: /Pressure-Washing-Gold-Coast.html
+  - title: Commercial
+    url: /Commercial-and-Body-Corporate.html
+  - title: Pricing
+    url: /pricing/
+  - title: Our Work
+    url: /portfolio/
+  - title: Blog
+    url: /blog/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+
+collections:
+  suburbs:
+    output: true
+    permalink: /pressure-cleaning-:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "suburbs"
+    values:
+      layout: "suburb"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules

@@ -1,0 +1,116 @@
+---
+layout: default
+permalink: /portfolio/
+title: Our Work | Roof & Pressure Cleaning Photos Gold Coast | GC Shine
+description: "Before and after photos from recent GC Shine jobs across the Gold Coast — roof washing, house washing, window cleaning, pressure cleaning and commercial work."
+breadcrumb: "Our Work"
+image: /images/roof-washing-gold-coast-before-after.webp
+sections:
+  - key: roof
+    title: Roof Washing
+    url: /Roof-Washing-Gold-Coast.html
+    blurb: "Soft wash treatment on tile, terracotta and Colorbond. No high pressure anywhere near the roof."
+  - key: house
+    title: House Washing
+    url: /House-Washing-Gold-Coast.html
+    blurb: "Low-pressure exterior cleaning that lifts mould without stripping paint or render."
+  - key: window
+    title: Window Cleaning
+    url: /Window-Cleaning-Gold-Coast.html
+    blurb: "Streak-free glass, plus sills, frames and flyscreens."
+  - key: pressure
+    title: Pressure Cleaning
+    url: /Pressure-Washing-Gold-Coast.html
+    blurb: "Driveways, paths, patios and pool surrounds cleaned to an even finish."
+  - key: commercial
+    title: Commercial & Body Corporate
+    url: /Commercial-and-Body-Corporate.html
+    blurb: "Carparks, walkways and strata complexes, scheduled around your trading hours."
+preload_image: /images/roof-washing-gold-coast-before-after.webp
+---
+<section class="page-hero">
+  <div class="hero-media" style="background-image:url('{{ "/images/roof-washing-gold-coast-before-after.webp" | relative_url }}');"></div>
+  <div class="hero-inner">
+    <span class="eyebrow">Our Work</span>
+    <h1>See the difference for yourself.</h1>
+    <p class="lede">Real jobs from around the Gold Coast &mdash; no stock photos, no borrowed before-and-afters. Every one of these is ours.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get a quote for yours</a>
+      <a class="btn btn-outline" href="tel:{{ site.phone_link }}">Call or text {{ site.phone_display }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a> &rsaquo; <span>Our Work</span>
+    </nav>
+
+    {%- comment -%} Collect every suburb that appears in the gallery {%- endcomment -%}
+    {%- assign all_jobs = "" | split: "" -%}
+    {%- for sec in page.sections -%}
+      {%- assign all_jobs = all_jobs | concat: site.data.portfolio[sec.key] -%}
+    {%- endfor -%}
+    {%- assign placed = all_jobs | where_exp: "j", "j.suburb != ''" | map: "suburb" | uniq | sort -%}
+    {%- if placed.size > 0 %}
+    <div class="prose" style="max-width:74ch;">
+      <h2>Where these jobs are</h2>
+      <p>Every photo on this page is a real GC Shine job, and they're spread right across the coast. Tap a suburb to see what we'd recommend for a property there.</p>
+    </div>
+    <ul class="inline-links" style="margin:0 0 40px;">
+      {%- for sub in placed %}
+      {%- assign sp = site.suburbs | where: "suburb", sub | first %}
+      <li>
+        {%- if sp -%}
+        <a href="{{ sp.url | relative_url }}">{{ sub }}</a>
+        {%- else -%}
+        <span>{{ sub }}</span>
+        {%- endif -%}
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+
+    {%- for sec in page.sections %}
+    {%- assign jobs = site.data.portfolio[sec.key] %}
+    {%- if jobs and jobs.size > 0 %}
+    <div class="prose" style="max-width:74ch;">
+      <h2 id="{{ sec.key }}">{{ sec.title }}</h2>
+      <p>{{ sec.blurb }} <a href="{{ sec.url | relative_url }}">More about {{ sec.title | downcase }} &rarr;</a></p>
+    </div>
+    <div class="gallery">
+      {%- for job in jobs %}
+      {%- assign sub_page = site.suburbs | where: "suburb", job.suburb | first %}
+      <figure>
+        <img src="{{ '/images/' | append: job.image | relative_url }}"
+             alt="{{ job.alt }}{% if job.suburb and job.suburb != '' %} in {{ job.suburb }}, Gold Coast{% endif %}"
+             loading="lazy" width="{{ job.width | default: 620 }}" height="{{ job.height | default: 465 }}">
+        <figcaption>
+          {%- if job.suburb and job.suburb != '' -%}
+            {%- if sub_page -%}
+            <a class="job-suburb" href="{{ sub_page.url | relative_url }}">{{ job.suburb }}</a>
+            {%- else -%}
+            <strong class="job-suburb">{{ job.suburb }}</strong>
+            {%- endif -%}
+            &mdash;
+          {%- endif -%}
+          {{ job.caption }}
+        </figcaption>
+      </figure>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+    {%- endfor %}
+
+    <div class="prose" style="margin-top:48px;">
+      <h2>Want yours to look like this?</h2>
+      <p>Send through your address and we'll take a look before we call you back with a price. Free, no obligation, and we'll tell you honestly if it doesn't need doing yet.</p>
+      <p><a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get a free quote</a></p>
+    </div>
+  </div>
+</section>
+
+{% include reviews.html %}
+{% include trust-bar.html %}
+{% include cta-banner.html %}

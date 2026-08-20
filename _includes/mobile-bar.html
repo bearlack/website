@@ -1,0 +1,12 @@
+{%- comment -%}
+  Sticky action bar, mobile only. 95% of traffic is on a phone, so the two
+  things a visitor is most likely to want are always one thumb-tap away.
+{%- endcomment -%}
+<div class="mobile-bar">
+  <a class="mobile-bar__call" href="tel:{{ site.phone_link }}">
+    <span aria-hidden="true">&#9742;</span> Call or text
+  </a>
+  <a class="mobile-bar__quote" href="{{ '/quote/' | relative_url }}">
+    Get a free quote
+  </a>
+</div>

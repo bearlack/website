@@ -1,0 +1,47 @@
+---
+suburb: "Palm Beach"
+title: "Pressure Cleaning & Roof Washing Palm Beach"
+description: "Roof washing, house washing and pressure cleaning in Palm Beach. Older terracotta roofs and heavy salt exposure are what we deal with here. Free quotes."
+heading: "Roof and exterior cleaning in Palm Beach."
+lede: "Older beachside homes, a lot of original terracotta, and salt coming off the ocean every day of the year."
+hero: /images/tile-roof-washing-gold-coast.webp
+travel: "about 30 minutes south of us, and somewhere we work regularly"
+nearby:
+  - "Burleigh Heads"
+  - "Currumbin"
+  - "Tallebudgera"
+breadcrumb: "Palm Beach"
+service_name: "Pressure Cleaning Palm Beach"
+local_factors:
+  - heading: "Decades of salt build-up on original roofs"
+    body: "Salt doesn't just sit on the surface — over time it works into porous terracotta and shows up as white efflorescence alongside the organic growth. Removing both is what takes an old Palm Beach roof from grey-green back to red. This is genuinely the suburb where we see the biggest visual change."
+  - heading: "Constant ocean exposure"
+    body: "There's very little between Palm Beach and the open ocean. Salt-laden air settles on everything and holds moisture against the surface, which is exactly what mould, lichen and algae need to establish. Everything here fouls faster than it would a few kilometres inland."
+  - heading: "A suburb mid-renovation"
+    body: "Palm Beach has been steadily upgrading for years. If you're renovating or preparing to sell, exterior cleaning is the cheapest presentation win available — a soft washed roof and house can make a place look freshly rendered for a fraction of what painting costs."
+schedule:
+  - service: "Roof washing"
+    url: "/Roof-Washing-Gold-Coast.html"
+    interval: "Every 2 years"
+    why: "Direct ocean exposure means salt and organic growth establish faster than almost anywhere."
+  - service: "House washing"
+    url: "/House-Washing-Gold-Coast.html"
+    interval: "Every 12 months"
+    why: "Salt film holds moisture against paint and render, so mould takes hold quickly."
+  - service: "Window cleaning"
+    url: "/Window-Cleaning-Gold-Coast.html"
+    interval: "Every 3 months"
+    why: "Ocean-front glass spots fast, and left long enough the minerals etch in permanently."
+  - service: "Pressure cleaning"
+    url: "/Pressure-Washing-Gold-Coast.html"
+    interval: "Every 12 months"
+    why: "Damp, salty paths and driveways go green and slippery quickly."
+faqs:
+  - q: "My terracotta roof looks beyond saving — is it?"
+    a: "Probably not. Forty years of growth and salt on terracotta looks hopeless and usually isn't — the colour underneath is intact, it's just buried. We'd rather look at it and tell you honestly than have you replace a roof that only needed washing."
+  - q: "What is the white powdery staining on my roof?"
+    a: "That's efflorescence — mineral salts drawn out of the tiles and left on the surface. It's very common this close to the ocean, and it comes off as part of a proper soft wash treatment."
+  - q: "Do you charge extra to come to Palm Beach?"
+    a: "No. Palm Beach is well within our service area and there's no travel surcharge anywhere on the Gold Coast."
+---
+<p>Palm Beach is one of our favourite suburbs to work in, because the results are so obvious. A lot of the housing stock is original beachside homes with terracotta tile roofs that have been sitting in salt air for decades, and terracotta responds dramatically to a proper soft wash — it comes back to a warm red that most owners had forgotten was under there. There's also a wave of renovation through the suburb, and a clean roof makes an enormous difference to how a renovated house presents.</p>

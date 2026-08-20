@@ -1,0 +1,14 @@
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-banner">
+      <div>
+        <h2>{{ include.heading | default: "Free quote, no obligation." }}</h2>
+        <p class="cta-banner__sub">{{ include.sub | default: "Call or text and we'll usually have a price back to you the same day." }}</p>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:{{ site.phone_link }}">{{ site.phone_display }}</a>
+        <a class="btn btn-outline" href="{{ '/quote/' | relative_url }}">Request a quote online</a>
+      </div>
+    </div>
+  </div>
+</section>

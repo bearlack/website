@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<article class="section">
+  <div class="container post-body">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a> &rsaquo;
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    </nav>
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%-d %B %Y" }}{% if page.author %} &middot; {{ page.author }}{% endif %}</p>
+    <div class="prose">
+      {{ content }}
+    </div>
+
+    <div class="post-services">
+      <h2>Services mentioned in this article</h2>
+      <ul class="inline-links">
+        <li><a href="{{ '/Roof-Washing-Gold-Coast.html' | relative_url }}">Roof washing</a></li>
+        <li><a href="{{ '/House-Washing-Gold-Coast.html' | relative_url }}">House washing</a></li>
+        <li><a href="{{ '/Pressure-Washing-Gold-Coast.html' | relative_url }}">Pressure cleaning</a></li>
+        <li><a href="{{ '/Window-Cleaning-Gold-Coast.html' | relative_url }}">Window cleaning</a></li>
+        <li><a href="{{ '/pricing/' | relative_url }}">Pricing</a></li>
+      </ul>
+    </div>
+
+    {%- assign more = site.posts | where_exp: "p", "p.url != page.url" | slice: 0, 3 %}
+    {%- if more.size > 0 %}
+    <div class="post-more">
+      <h2>More from the blog</h2>
+      <ul class="inline-links">
+        {%- for p in more %}
+        <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endif %}
+  </div>
+</article>
+
+{% include cta-banner.html heading="Want a hand with yours?" sub="Free quote, no obligation — we'll tell you honestly if it doesn't need doing yet." %}
+{% include trust-bar.html %}

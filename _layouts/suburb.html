@@ -1,0 +1,124 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="hero-media" style="background-image:url('{{ page.hero | default: "/images/roof-washing-gold-coast-before-after.webp" | relative_url }}');"></div>
+  <div class="hero-inner">
+    <span class="eyebrow">{{ page.suburb }}</span>
+    <h1>{{ page.heading }}</h1>
+    <p class="lede">{{ page.lede }}</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get a free quote</a>
+      <a class="btn btn-outline" href="tel:{{ site.phone_link }}">Call or text {{ site.phone_display }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container prose">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a> &rsaquo;
+      <a href="{{ '/service-areas/' | relative_url }}">Service areas</a> &rsaquo;
+      <span>{{ page.suburb }}</span>
+    </nav>
+
+    {{ content }}
+
+    <h2>What makes {{ page.suburb }} properties different</h2>
+    {%- for f in page.local_factors %}
+    <h3>{{ f.heading }}</h3>
+    <p>{{ f.body }}</p>
+    {%- endfor %}
+
+    {%- if page.schedule %}
+    <h2>What we'd recommend for a typical {{ page.suburb }} property</h2>
+    <div class="schedule-table" role="table" aria-label="Recommended cleaning schedule for {{ page.suburb }}">
+      <div class="schedule-row schedule-row--head" role="row">
+        <span role="columnheader">Service</span>
+        <span role="columnheader">How often</span>
+        <span role="columnheader">Why here</span>
+      </div>
+      {%- for s in page.schedule %}
+      <div class="schedule-row" role="row">
+        <span role="cell"><a href="{{ s.url | relative_url }}">{{ s.service }}</a></span>
+        <span role="cell"><strong>{{ s.interval }}</strong></span>
+        <span role="cell">{{ s.why }}</span>
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+
+    <h2>Services we offer in {{ page.suburb }}</h2>
+    <div class="mini-cards">
+      <a class="mini-card" href="{{ '/Roof-Washing-Gold-Coast.html' | relative_url }}">
+        <strong>Roof washing</strong>
+        <span>Soft wash for tile, terracotta and Colorbond. Free solar panel clean included.</span>
+        <span class="mini-card__price">Average $825</span>
+      </a>
+      <a class="mini-card" href="{{ '/House-Washing-Gold-Coast.html' | relative_url }}">
+        <strong>House washing</strong>
+        <span>Low-pressure exterior clean that lifts mould without touching your paint.</span>
+        <span class="mini-card__price">Average $490</span>
+      </a>
+      <a class="mini-card" href="{{ '/Pressure-Washing-Gold-Coast.html' | relative_url }}">
+        <strong>Pressure cleaning</strong>
+        <span>Driveways, paths, patios and pool surrounds brought back to an even finish.</span>
+        <span class="mini-card__price">Average $230</span>
+      </a>
+      <a class="mini-card" href="{{ '/Window-Cleaning-Gold-Coast.html' | relative_url }}">
+        <strong>Window cleaning</strong>
+        <span>Streak-free glass with sills, frames and flyscreens done too &mdash; interiors on request.</span>
+        <span class="mini-card__price">Average $295</span>
+      </a>
+    </div>
+
+    <p>Booking more than one at a time works out cheaper &mdash; have a look at our
+      <a href="{{ '/pricing/' | relative_url }}">bundle pricing</a>, or just tick everything you're
+      interested in on the <a href="{{ '/quote/' | relative_url }}">quote form</a> and we'll price it up together.</p>
+
+    {%- if page.faqs %}
+    <h2>{{ page.suburb }} questions we get asked</h2>
+    <div class="faq-list">
+      {%- for item in page.faqs %}
+      <details class="faq-item">
+        <summary>{{ item.q }}</summary>
+        <p>{{ item.a }}</p>
+      </details>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+
+    <h2>Booking a clean in {{ page.suburb }}</h2>
+    <p>We're based in Southport and {{ page.suburb }} is {{ page.travel }}. Call or text
+      <a href="tel:{{ site.phone_link }}">{{ site.phone_display }}</a> and we'll usually have a price back to you
+      the same working day &mdash; or send through the <a href="{{ '/quote/' | relative_url }}">online quote form</a>
+      with your address and we'll take a look before we call.</p>
+
+    {%- comment -%} `nearby:` in each suburb's front matter lists genuinely
+        adjacent suburbs. The fallback deliberately isn't titled "Nearby",
+        because an alphabetical list isn't. {%- endcomment -%}
+    {%- if page.nearby %}
+    <h2>Nearby areas we also service</h2>
+    <ul class="inline-links">
+      {%- for name in page.nearby %}
+      {%- assign s = site.suburbs | where: "suburb", name | first %}
+      {%- if s %}<li><a href="{{ s.url | relative_url }}">{{ s.suburb }}</a></li>{%- endif %}
+      {%- endfor %}
+    </ul>
+    {%- else %}
+    {%- assign others = site.suburbs | where_exp: "s", "s.url != page.url" -%}
+    {%- if others.size > 0 %}
+    <h2>Other areas we service</h2>
+    <ul class="inline-links">
+      {%- for s in others limit: 8 %}
+      <li><a href="{{ s.url | relative_url }}">{{ s.suburb }}</a></li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+    {%- endif %}
+  </div>
+</section>
+
+{% include reviews.html heading="What Gold Coast customers say." %}
+{% include cta-banner.html %}
+{% include trust-bar.html %}

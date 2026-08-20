@@ -1,0 +1,84 @@
+{%- assign live = site.data.reviews.reviews | where_exp: "r", "r.text" -%}
+<section class="section section-alt" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>{{ include.heading | default: "What our customers say." }}</h2>
+      <p>Rated 5 stars on Google by Gold Coast homeowners, body corporates and businesses.</p>
+    </div>
+
+    {%- if live and live.size > 0 %}
+    <div class="rev" data-rev-carousel data-rev-interval="7000">
+      <div class="rev__viewport">
+        <ul class="rev__track">
+          {%- for r in live %}
+          <li class="rev__slide{% if forloop.first %} is-active{% endif %}" data-rev-slide{% unless forloop.first %} aria-hidden="true"{% endunless %}>
+            <article class="rev__card{% if r.photo %} rev__card--with-photo{% endif %}">
+              {%- if r.photo %}
+              <div class="rev__photo">
+                <img src="{{ '/images/' | append: r.photo | relative_url }}"
+                     alt="{{ r.photo_alt | default: r.service | default: 'Exterior cleaning job by GC Shine' }}"
+                     loading="lazy" width="{{ r.photo_width | default: 620 }}" height="{{ r.photo_height | default: 465 }}">
+              </div>
+              {%- endif %}
+              <div class="rev__body">
+                <div class="rev__stars" role="img" aria-label="{{ r.stars }} out of 5 stars">
+                  {%- for i in (1..r.stars) -%}<span aria-hidden="true">&#9733;</span>{%- endfor -%}
+                </div>
+                <blockquote class="rev__quote">{{ r.text }}</blockquote>
+                <div class="rev__who">
+                  {%- if r.avatar %}
+                  <img class="rev__avatar" src="{{ '/images/' | append: r.avatar | relative_url }}" alt="" loading="lazy" width="48" height="48">
+                  {%- else %}
+                  <span class="rev__avatar rev__avatar--initial" aria-hidden="true">{{ r.name | slice: 0, 1 | upcase }}</span>
+                  {%- endif %}
+                  <span class="rev__meta">
+                    <strong>{{ r.name }}</strong>
+                    <span class="rev__sub">
+                      {%- if r.suburb %}{{ r.suburb }}{% endif -%}
+                      {%- if r.suburb and r.service %} &middot; {% endif -%}
+                      {%- if r.service %}{{ r.service }}{% endif -%}
+                    </span>
+                  </span>
+                  <a class="rev__verify" href="{{ r.link | default: site.google_reviews_url }}" target="_blank" rel="noopener">
+                    <span class="rev__g" aria-hidden="true">G</span>
+                    <span>Verified Google review</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+          {%- endfor %}
+        </ul>
+      </div>
+
+      {%- if live.size > 1 %}
+      <div class="rev__controls">
+        <button type="button" class="rev__pause" data-rev-pause aria-pressed="false" aria-label="Pause automatic rotation">&#10074;&#10074;</button>
+        <button type="button" class="rev__arrow" data-rev-prev aria-label="Previous review">&#8249;</button>
+        <div class="rev__dots">
+          {%- for r in live %}
+          <button type="button" class="rev__dot{% if forloop.first %} is-active{% endif %}"
+                  data-rev-dot="{{ forloop.index0 }}"
+                  aria-label="Show review {{ forloop.index }} of {{ live.size }}"></button>
+          {%- endfor %}
+        </div>
+        <button type="button" class="rev__arrow" data-rev-next aria-label="Next review">&#8250;</button>
+      </div>
+      {%- endif %}
+    </div>
+
+    <p class="review-more">
+      <a class="btn btn-ghost" href="{{ site.google_reviews_url }}" target="_blank" rel="noopener">Read all our Google reviews</a>
+    </p>
+
+    {%- else -%}
+    <!-- No reviews in _data/reviews.yml yet - falling back to the live Elfsight widget. -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-7fabffa8-f7cb-45e5-9860-35a5059b4d84" data-elfsight-app-lazy></div>
+    <p class="review-more">
+      <a class="btn btn-ghost" href="{{ site.google_reviews_url }}" target="_blank" rel="noopener">Read our Google reviews</a>
+    </p>
+    {%- endif -%}
+  </div>
+</section>
