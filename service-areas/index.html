@@ -1,0 +1,54 @@
+---
+layout: default
+permalink: /service-areas/
+title: Service Areas | Pressure Cleaning Across the Gold Coast | GC Shine
+description: "GC Shine services the whole Gold Coast from Southport — Burleigh Heads, Currumbin, Robina, Ashmore, Hope Island and everywhere between. No travel surcharge."
+breadcrumb: "Service Areas"
+preload_image: /images/pressure-cleaning-gold-coast.webp
+---
+<section class="page-hero">
+  <div class="hero-media" style="background-image:url('{{ "/images/pressure-cleaning-gold-coast.webp" | relative_url }}');"></div>
+  <div class="hero-inner">
+    <span class="eyebrow">Service Areas</span>
+    <h1>We cover the whole Gold Coast.</h1>
+    <p class="lede">Based in Southport, working from the northern canal estates down to the Tweed border and inland through the valleys &mdash; with no travel surcharge anywhere in between.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get a free quote</a>
+      <a class="btn btn-outline" href="tel:{{ site.phone_link }}">Call or text {{ site.phone_display }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a> &rsaquo; <span>Service Areas</span>
+    </nav>
+
+    <div class="prose">
+      <h2>Areas we work in most</h2>
+      <p>Every Gold Coast suburb throws up something slightly different. Coastal properties fight salt; inland and valley properties fight shade and leaf drop; canal suburbs somehow manage both. We've written up what to expect in the areas we're called to most often &mdash; including how often we'd actually recommend cleaning, which isn't the same everywhere.</p>
+    </div>
+
+    {%- assign subs = site.suburbs | sort: "suburb" %}
+    <div class="area-grid" style="margin-top:28px;">
+      {%- for s in subs %}
+      <a class="area-card" href="{{ s.url | relative_url }}">
+        <strong>{{ s.suburb }}</strong>
+        <span>{{ s.lede | truncate: 105 }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+
+    <div class="prose" style="margin-top:48px;">
+      <h2>Don't see your suburb?</h2>
+      <p>These are just the areas we get asked about most &mdash; we service the entire Gold Coast, from Coomera and Hope Island in the north through to Coolangatta and the Tweed border in the south, and inland to Nerang, Mudgeeraba and the valleys. If you're anywhere in that stretch, we'll come to you at no extra charge.</p>
+      <p>Not sure whether you're in range? Just <a href="{{ '/quote/' | relative_url }}">send us your address</a> or give us a call and we'll tell you straight away.</p>
+      <p><a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get a free quote</a></p>
+    </div>
+  </div>
+</section>
+
+{% include reviews.html %}
+{% include trust-bar.html %}
+{% include cta-banner.html %}

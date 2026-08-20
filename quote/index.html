@@ -1,0 +1,104 @@
+---
+layout: default
+permalink: /quote/
+title: Get a Free Quote | GC Shine Pressure Washing Gold Coast
+description: "Request a free, no-obligation quote from GC Shine for roof washing, house washing, window cleaning or pressure cleaning on the Gold Coast. Same-day reply."
+breadcrumb: "Get a Quote"
+preload_image: /images/roof-washing-gold-coast-4.webp
+---
+<section class="page-hero">
+  <div class="hero-media" style="background-image:url('{{ "/images/roof-washing-gold-coast-4.webp" | relative_url }}');"></div>
+  <div class="hero-inner">
+    <span class="eyebrow">Free Quote</span>
+    <h1>Get a free, no-obligation quote.</h1>
+    <p class="lede">Fill in the form and we'll get back to you by the end of the work day &mdash; or if you'd rather just talk it through, give us a call.</p>
+    <div class="hero-actions">
+      <a class="btn btn-call" href="tel:{{ site.phone_link }}">&#9742; Call or text: {{ site.phone_display }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Tell us about your property</h2>
+      <p>The more you can tell us, the more accurate the price. We'll often take a look at your place on satellite view before we call, so an address helps a lot.</p>
+    </div>
+
+    <form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
+      <input type="hidden" name="access_key" value="a98f3ba4-01ad-41eb-b4e4-56cc84fbe4ce">
+      <input type="hidden" name="subject" value="New quote request from gcshine.com.au">
+      <input type="hidden" name="from_name" value="GC Shine website">
+      <input type="hidden" name="redirect" value="https://www.gcshine.com.au/thank-you/">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="form-row-split">
+        <div class="form-row">
+          <label for="q-name">Name</label>
+          <input type="text" id="q-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="form-row">
+          <label for="q-phone">Phone</label>
+          <input type="tel" id="q-phone" name="phone" autocomplete="tel" inputmode="tel" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="q-email">Email <span class="optional">(optional)</span></label>
+        <input type="email" id="q-email" name="email" autocomplete="email" inputmode="email">
+      </div>
+
+      <div class="form-row">
+        <label for="q-address">Property address</label>
+        <input type="text" id="q-address" name="address" autocomplete="street-address" required>
+        <p class="form-hint">So we can take a look before we call you back with a price.</p>
+      </div>
+
+      <fieldset class="form-row">
+        <legend>Service(s) needed <span class="optional">(select all that apply)</span></legend>
+        <div class="service-checks">
+          <label class="check-item"><input type="checkbox" name="service_roof_washing" value="Roof Washing"> Roof Washing</label>
+          <label class="check-item"><input type="checkbox" name="service_house_washing" value="House Washing"> House Washing</label>
+          <label class="check-item"><input type="checkbox" name="service_window_cleaning" value="Window Cleaning"> Window Cleaning</label>
+          <label class="check-item"><input type="checkbox" name="service_pressure_washing" value="Pressure Cleaning"> Pressure Cleaning (driveways, paths, fences)</label>
+          <label class="check-item"><input type="checkbox" name="service_gutter" value="Gutter Cleaning"> Gutter Cleaning</label>
+          <label class="check-item"><input type="checkbox" name="service_solar_panel" value="Solar Panel Cleaning"> Solar Panel Cleaning</label>
+          <label class="check-item"><input type="checkbox" name="service_commercial" value="Commercial / Body Corporate"> Commercial / Body Corporate</label>
+          <label class="check-item"><input type="checkbox" name="service_other" value="Not sure / other"> Not sure / other</label>
+        </div>
+        <p class="form-hint">Ticking more than one is usually cheaper &mdash; see <a href="{{ '/pricing/#bundles' | relative_url }}">bundle pricing</a>. Solar panel cleaning is free with any roof wash, and gutter cleaning is only $100 added to one.</p>
+      </fieldset>
+
+      <div class="form-row">
+        <label for="q-message">Tell us about the job <span class="optional">(optional)</span></label>
+        <textarea id="q-message" name="message" rows="5" placeholder="e.g. single or double storey, roughly how long since it was last cleaned, anything you're unsure about"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="q-source">How did you hear about us? <span class="optional">(optional)</span></label>
+        <select id="q-source" name="how_did_you_hear">
+          <option value="">Choose one…</option>
+          <option value="Google search">Google search</option>
+          <option value="Google Maps / Business Profile">Google Maps</option>
+          <option value="Facebook or Instagram ad">Facebook or Instagram ad</option>
+          <option value="Facebook or Instagram (not an ad)">Facebook or Instagram (not an ad)</option>
+          <option value="Friend or family referral">Friend or family recommended you</option>
+          <option value="Saw the van / saw you working">Saw the van or saw you working</option>
+          <option value="Repeat customer">I've used you before</option>
+          <option value="Other">Something else</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send quote request</button>
+
+      <p class="form-reassure">
+        <span>Free, with no obligation</span>
+        <span>Reply by end of the work day</span>
+        <span>We never share your details &mdash; <a href="{{ '/privacy/' | relative_url }}">privacy policy</a></span>
+      </p>
+    </form>
+  </div>
+</section>
+
+{% include reviews.html heading="You'd be in good company." %}
+{% include trust-bar.html %}
