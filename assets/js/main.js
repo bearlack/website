@@ -27,6 +27,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   })();
 
+  /* ---------- Quote form: copy each request to Make → ServiceM8 ---------- */
+  // The normal Web3Forms submit (email + thank-you page) carries on untouched;
+  // this only sends a background copy, so a Make outage can never lose a lead.
+  Array.prototype.forEach.call(document.querySelectorAll('form[data-crm-webhook]'), function (form) {
+    var hook = form.getAttribute('data-crm-webhook');
+    if (!hook || !navigator.sendBeacon) return;
+
+    form.addEventListener('submit', function () {
+      var bot = form.querySelector('input[name="botcheck"]');
+      if (bot && bot.checked) return;
+
+      var data = new FormData(form);
+      var out = new URLSearchParams();
+      var services = [];
+      var skip = { access_key: 1, subject: 1, from_name: 1, redirect: 1, botcheck: 1 };
+      data.forEach(function (value, key) {
+        if (skip[key]) return;
+        if (key.indexOf('service_') === 0) { services.push(value); return; }
+        out.append(key, value);
+      });
+      out.append('services', services.join(', '));
+      out.append('source', 'Website');
+      out.append('page', window.location.href);
+      try { navigator.sendBeacon(hook, out); } catch (e) { /* email still goes */ }
+    });
+  });
+
   /* ---------- Reviews carousel ---------- */
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
