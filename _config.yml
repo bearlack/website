@@ -17,7 +17,7 @@ google_reviews_url: "https://share.google/DxUZRjYUS1RgrGzHi"
 
 # Make.com webhook that turns each quote request into a ServiceM8 job (Website badge).
 # Leave empty to switch it off; the Web3Forms email still arrives either way.
-crm_webhook_url: ""
+crm_webhook_url: "https://hook.eu1.make.com/mqibhg5hwhvwyouhes9kbpaq66ooh1bq"
 
 # ABN, shown in the footer and site structured data
 abn: "18 819 928 297"
